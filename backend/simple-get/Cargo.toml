@@ -1,0 +1,17 @@
+[package]
+name = "simple-get"
+version = "0.1.0"
+authors = ["Hikaru Hasegawa <drumscohika@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lambda_runtime = "0.2.1"
+lambda_http = "0.1.1"
+log = "0.4"
+serde_json = "^1"
+serde_derive = "^1"
+serde = { version = "^1.0", features = ["derive"] }
+simple_logger = "1.11.0"
+simple-error = "0.2.3"

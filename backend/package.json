@@ -1,0 +1,10 @@
+{
+  "name": "serverless-rust",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "^2.22.0",
+    "serverless-rust": "^0.3.8"
+  }
+}

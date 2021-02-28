@@ -1,0 +1,25 @@
+service: rust-sample
+provider:
+  name: aws
+  runtime: rust
+  memorySize: 128
+  region: ap-northeast-1
+plugins:
+  - serverless-rust
+package:
+  individually: true
+functions:
+  sample:
+    handler: simple-get
+    events:
+      - http:
+          path: /simple-get
+          method: GET
+  sample2:
+    handler: simple-get2
+    environment:
+      RUST_LOG: info
+    events:
+      - http:
+          path: /simple-get2
+          method: GET
